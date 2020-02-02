@@ -1,0 +1,72 @@
+html{
+    font-size: 16px;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+    background-color:   wheat;
+  }
+  
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 8px;
+    align-items: flex-end;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+    flex: 1 0 min-content;
+
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: grid;
+    justify-content: end;
+    align-self: center;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper :nth-child(ODD){
+    background-color: grey;
+}
+
+.wrapper :nth-child(even){
+    background-color: red;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.p1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.p2{
+    grid-row: 2;;
+}
+
+
+
+
+@media screen and (min-width: 640px){
+    html {
+      font-size: 16px;
+    }
+  
+  }
